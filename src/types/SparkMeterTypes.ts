@@ -16,3 +16,15 @@ export interface ApiResponse {
     status: string;
     data: SalesAccount;
 }
+
+export interface BalanceHistory {
+    timestamp: string;
+    account_balance: number;
+}
+
+export interface BalanceHistoryResponse {
+    status: string;
+    data: BalanceHistory[];
+}
+
+export type Resolution = 'hourly' | 'daily' | 'weekly' | 'monthly';
